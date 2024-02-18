@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p {
+                background-color: lightblue;
+                color: green;
+        }
+        a[target] {
+              text-decoration: none;
+        }
+            
+            a[target=_blank] {
+              font-size: x-large;
+        }
+            
+            section[class$="para"]::first-letter {
+              font-size: 200%;
+              color: purple;
+        }
+    </style>
+</head>
+<body>
+    <table border="2">
+        <caption>T20 matches</caption>
+        <thead>
+            <caption>Mobile Inventories Available at Hussain's Shopping!</caption>
+            <tr>
+                <th rowspan="2">Product Name</th>
+                <th colspan="4">Product Details
+                    <tr>
+                        <th>Preice</th>
+                        <th colspan="3">Description</th>
+                    </tr>
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ausus Zenfone</td>
+                <td>11599</td>
+                <td>an economical phone by Asus</td>
+            </tr>
+            <tr>
+                <td>Ausus Zenfone</td>
+                <td>11599</td>
+                <td>an economical phone by Asus</td>
+            </tr>
+            <tr>
+                <td>Ausus Zenfone</td>
+                <td>11599</td>
+                <td>an economical phone by Asus</td>
+            </tr>
+            <tr>
+                <td>Ausus Zenfone</td>
+                <td>11599</td>
+                <td>an economical phone by Asus</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname" />
+        Lastname: <input type="text" id="lastname" />
+        <br>
+        choose a coloer : <input type="color">
+        <br>
+        DOB <input type="date">
+        country : <select>
+            <option value="7"></option>&nbsp;
+            <option value="2">usa</option>
+            <option value="1">china</option>
+            <option value="3">rusiaa</option>
+            <option value="0">india</option>
+        </select>
+        Country: <input list="countries">
+<datalist id="countries">
+    <option value="India">
+        <option value="France">
+            <option value="Singapore">
+                <option value="Thailand">
+                    <option value="United Arab Emirates">
+                        <option value="United States of America">
+</datalist>
+<br>
+Volume: <input type="range"/>
+<br>
+<input type="submit" formmethod="post">
+    </form>
+    <div>
+        <p>This is a paragraph inside a div element.</p>
+        <p>This is another paragraph inside a div element.</p>
+    </div>
+    <p>This is a paragraph, not inside a div element.</p>
+    <p>This is another paragraph, not inside a div element.</p>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" target="_blank">Information</a></li>
+            <li><a href="#" target="_self">Contact us</a></li>
+        </ul>
+    </nav>
+    <section class="para_section">
+        <h2>The is the paragraph within the first section tag.</h2>
+        <p>The class name of the section is "para"
+        </p>
+    </section>
+    <div class="para">
+        <p>This is the paragraph element within the div tag with the target styling</p>
+    </div>
+
+    <section class="last_para">
+        <h2>This is the last section of the page</h2>
+    </section>
+    <div class="last">
+        This div class value contains 'par' value in it
+    </div>
+</body>
+</html>
